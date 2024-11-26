@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentLink Africa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <header>
+        <div class="auth-container">
+            <form id="loginForm" class="auth-form">
+                <h2>Login</h2>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="/register.html">Register here</a></p>
+            </form>
+        </div>
+
+        <nav>
+            <div class="logo">TalentLink Africa</div>
+            <ul class="nav-links">
+                <li><a href="#" data-section="home">Home</a></li>
+                <li><a href="#" data-section="jobs">Find Jobs</a></li>
+                <li><a href="#" data-section="talents">Find Talents</a></li>
+                <li><a href="#" data-section="dashboard">Dashboard</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="active">
+            <h1>Connecting Local Talent to Global Opportunities</h1>
+            <p>Find your next gig or hire skilled professionals in Africa</p>
+            <div class="cta-buttons">
+                <button class="cta-button" data-section="jobs">Find Jobs</button>
+                <button class="cta-button" data-section="talents">Hire Talent</button>
+            </div>
+        </section>
+
+        <section id="jobs">
+            <h2>Available Jobs</h2>
+            <div id="job-list" class="card-list"></div>
+        </section>
+
+        <section id="talents">
+            <h2>Available Talents</h2>
+            <div id="talent-list" class="card-list"></div>
+        </section>
+
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div class="dashboard-cards">
+                <div class="dashboard-card">
+                    <h3>Active Jobs</h3>
+                    <p id="active-jobs">0</p>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Completed Projects</h3>
+                    <p id="completed-projects">0</p>
+                </div>
+                <div class="dashboard-card">
+                    <h3>Total Earnings</h3>
+                    <p id="total-earnings">$0</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 TalentLink Africa. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
